@@ -1,0 +1,430 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+// --------- Fixed set --------
+
+$MainText: black;
+$Main-Color: rgb(116, 39, 116);
+
+@mixin Flex-Space($space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+}
+@mixin FlexD($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin MAinH1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+}
+
+@mixin MAinP {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+// ----------------Main Css----------
+
+// -----hero-page------------
+
+.hero-body-wrapper ::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background-image: url(./images/hero_desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-body-wrapper {
+  @include FlexD(column);
+  padding: 0rem 4rem;
+
+  .Hero-body-item-wrapper {
+    .topbar {
+      background-color: $Main-Color;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 0.5rem;
+      padding: 0.5rem 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .hero-middle-div {
+      @include FlexD(column);
+      height: 100vh;
+      padding: 0.5rem;
+
+      section {
+        margin: 2rem;
+
+        h1 {
+          @include MAinH1;
+          color: white;
+          text-shadow: 1px 1px 4px black;
+
+          .span {
+            color: rgb(214, 213, 213);
+            text-transform: uppercase;
+            text-shadow: 1px 4px 4px black;
+          }
+        }
+        hr {
+          width: 60%;
+          display: block;
+          margin: 1.5rem auto;
+        }
+
+        p {
+          margin: 2rem 0rem;
+          @include MAinP;
+
+          color: black;
+          text-shadow: 1px 1px 2px white;
+        }
+      }
+
+      .hero-buttons {
+        @include Flex-Space(space-around);
+        width: 60%;
+
+        .btn {
+          padding: 0.8rem 1.2rem;
+          @include MAinP;
+          color: black;
+          border: none;
+          border-radius: 0.3rem;
+          cursor: pointer;
+          border: 1px solid silver;
+          box-shadow: 4px 4px 14px black;
+
+          &:hover {
+            background-color: $Main-Color;
+            color: white;
+            border: 1px solid $Main-Color;
+            transition: all 0.5s ease-out;
+          }
+        }
+        .btn-sec {
+          background-color: $Main-Color;
+          color: white;
+
+          &:hover {
+            background-color: white;
+            color: $Main-Color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------description ------------
+
+.description {
+  @include FlexD(column);
+  background-image: linear-gradient(to bottom, white, rgb(227, 224, 224));
+
+  header {
+    h1 {
+      @include MAinH1;
+      color: black;
+      margin-top: 4rem;
+    }
+
+    hr {
+      width: 40%;
+      display: block;
+      margin: 1.4rem auto;
+    }
+
+    p {
+      margin: 2rem 0rem;
+      @include MAinP;
+      margin-bottom: 4rem;
+
+      color: black;
+      text-shadow: 1px 1px 5px white;
+    }
+  }
+
+  .img-desc {
+    @include FlexD(raw);
+    padding: 2rem 0rem;
+    .img {
+      height: 80%;
+      width: 60%;
+      padding: 1rem;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.4s ease-in;
+      }
+    }
+
+    .details {
+      @include FlexD(column);
+
+      .item-detail {
+        width: 80%;
+        margin: 0.5rem 0.4rem;
+
+        hr {
+          width: 40%;
+          margin: 0.5rem 0rem;
+        }
+
+        h1 {
+          font-size: 1.4rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+
+        .btn {
+          border: none;
+          outline: none;
+          margin-top: 0.4rem;
+          padding: 0.4rem;
+          color: white;
+          font-weight: 600;
+          font-size: 0.6rem;
+          border-radius: 0.2rem;
+          background-color: $Main-Color;
+          cursor: pointer;
+
+          &:hover {
+            color: $MainText;
+            background-color: white;
+            transition: all 0.3s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------ms-products --------
+
+.ms-products {
+  background-image: linear-gradient(to bottom, white, rgb(227, 224, 224));
+  padding: 1rem 4rem 4rem 4rem;
+  height: 110vh;
+
+  .ms-products-items {
+    @include FlexD(column);
+    h1 {
+      @include MAinH1;
+      color: black;
+      margin-top: 4rem;
+    }
+
+    hr {
+      width: 40%;
+      display: block;
+      margin: 1.4rem auto;
+    }
+
+    .ms-products-items-content {
+      width: 100%;
+      padding: 2rem 1rem;
+      @include FlexD(raw);
+
+      .mid-section {
+        @include FlexD(column);
+
+        p {
+          width: 80%;
+          margin: 2rem 0rem;
+          @include MAinP;
+          margin-bottom: 4rem;
+          color: black;
+          text-shadow: 1px 1px 5px white;
+        }
+
+        .btn {
+          background-color: $Main-Color;
+          padding: 0.8rem 1.2rem;
+          @include MAinP;
+          color: white;
+          border: none;
+          border-radius: 0.3rem;
+          cursor: pointer;
+          box-shadow: 4px 4px 14px black;
+
+          &:hover {
+            background-color: white;
+            color: black;
+            transition: all 0.5s ease-out;
+          }
+        }
+      }
+
+      .link-image {
+        width: 32%;
+      }
+    }
+  }
+
+  .Products-image {
+    width: 70%;
+    display: block;
+    margin: 1.5rem auto;
+  }
+}
+
+// ---------Security ------
+
+.security {
+  height: 100vh;
+  background: linear-gradient($Main-Color, rgba(58, 56, 56, 0.45)),
+    url(./images/office-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 4rem;
+
+  .security-items {
+    h1 {
+      @include MAinH1;
+      padding: 2rem 0;
+    }
+    hr {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 2rem 0rem;
+      @include MAinP;
+      margin-bottom: 4rem;
+      color: white;
+      text-shadow: 2px 1px 5px black;
+    }
+  }
+}
+
+// --------transform ---------
+
+.transform {
+  height: 70vh;
+  @include FlexD(raw);
+  background-image: linear-gradient(to bottom, white, rgb(227, 224, 224));
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 4rem 4rem;
+
+  h1 {
+    @include MAinH1;
+    color: black;
+    margin-top: 4rem;
+    text-shadow: 2px 1px 4px white;
+  }
+
+  hr {
+    width: 40%;
+    display: block;
+    margin: 1.4rem auto;
+  }
+
+  p {
+    margin: 2rem 0rem;
+    @include MAinP;
+    margin-bottom: 4rem;
+    color: black;
+    text-shadow: 2px 1px 5px white;
+  }
+
+  .transform-detail {
+    @include FlexD(raw);
+
+    .transform-detail-items {
+      margin: 0rem 3rem;
+      padding: 0.5rem 2.5rem;
+      border-bottom: 2px solid black;
+      border-left: 2px solid black;
+
+      h1 {
+        @include MAinH1;
+        color: black;
+        text-shadow: 2px 1px 4px white;
+      }
+
+      p {
+        @include MAinP;
+        color: black;
+        text-shadow: 2px 1px 4px white;
+      }
+    }
+  }
+}
+
+// --------microsoft-footer -----
+
+.microsoft-footer {
+  background: linear-gradient(to right, $Main-Color, rgba(58, 56, 56, 0.45));
+  @include FlexD(column);
+  padding: 2rem 1rem;
+
+  h1 {
+    @include MAinH1();
+  }
+  hr {
+    width: 40%;
+    margin: 1rem 0rem;
+  }
+
+  .microsoft-footer-items {
+    @include FlexD(raw);
+    .far {
+      font-size: 6rem;
+      color: white;
+      padding-right: 5rem;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .btn {
+      padding: 1.2rem 1.6rem;
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      border: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      box-shadow: 4px 4px 14px black;
+      background-color: $Main-Color;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid $Main-Color;
+        transition: all 0.5s ease-out;
+      }
+    }
+  }
+}

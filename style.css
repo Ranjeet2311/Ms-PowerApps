@@ -1,0 +1,589 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero-body-wrapper ::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background-image: url(./images/hero_desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-body-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0rem 4rem;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .topbar {
+  background-color: #742774;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.5rem;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div section {
+  margin: 2rem;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div section h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div section h1 .span {
+  color: #d6d5d5;
+  text-transform: uppercase;
+  text-shadow: 1px 4px 4px black;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div section hr {
+  width: 60%;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div section p {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div .hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div .hero-buttons .btn {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 1px solid silver;
+  -webkit-box-shadow: 4px 4px 14px black;
+          box-shadow: 4px 4px 14px black;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div .hero-buttons .btn:hover {
+  background-color: #742774;
+  color: white;
+  border: 1px solid #742774;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div .hero-buttons .btn-sec {
+  background-color: #742774;
+  color: white;
+}
+
+.hero-body-wrapper .Hero-body-item-wrapper .hero-middle-div .hero-buttons .btn-sec:hover {
+  background-color: white;
+  color: #742774;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#e3e0e0));
+  background-image: linear-gradient(to bottom, white, #e3e0e0);
+}
+
+.description header h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+}
+
+.description header hr {
+  width: 40%;
+  display: block;
+  margin: 1.4rem auto;
+}
+
+.description header p {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: black;
+  text-shadow: 1px 1px 5px white;
+}
+
+.description .img-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+  padding: 2rem 0rem;
+}
+
+.description .img-desc .img {
+  height: 80%;
+  width: 60%;
+  padding: 1rem;
+}
+
+.description .img-desc .img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.description .img-desc .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description .img-desc .details .item-detail {
+  width: 80%;
+  margin: 0.5rem 0.4rem;
+}
+
+.description .img-desc .details .item-detail hr {
+  width: 40%;
+  margin: 0.5rem 0rem;
+}
+
+.description .img-desc .details .item-detail h1 {
+  font-size: 1.4rem;
+}
+
+.description .img-desc .details .item-detail p {
+  font-size: 0.8rem;
+}
+
+.description .img-desc .details .item-detail .btn {
+  border: none;
+  outline: none;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.6rem;
+  border-radius: 0.2rem;
+  background-color: #742774;
+  cursor: pointer;
+}
+
+.description .img-desc .details .item-detail .btn:hover {
+  color: black;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.ms-products {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#e3e0e0));
+  background-image: linear-gradient(to bottom, white, #e3e0e0);
+  padding: 1rem 4rem 4rem 4rem;
+  height: 110vh;
+}
+
+.ms-products .ms-products-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ms-products .ms-products-items h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+}
+
+.ms-products .ms-products-items hr {
+  width: 40%;
+  display: block;
+  margin: 1.4rem auto;
+}
+
+.ms-products .ms-products-items .ms-products-items-content {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+}
+
+.ms-products .ms-products-items .ms-products-items-content .mid-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ms-products .ms-products-items .ms-products-items-content .mid-section p {
+  width: 80%;
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: black;
+  text-shadow: 1px 1px 5px white;
+}
+
+.ms-products .ms-products-items .ms-products-items-content .mid-section .btn {
+  background-color: #742774;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 14px black;
+          box-shadow: 4px 4px 14px black;
+}
+
+.ms-products .ms-products-items .ms-products-items-content .mid-section .btn:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.ms-products .ms-products-items .ms-products-items-content .link-image {
+  width: 32%;
+}
+
+.ms-products .Products-image {
+  width: 70%;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.security {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#742774), to(rgba(58, 56, 56, 0.45))), url(./images/office-background.jpg);
+  background: linear-gradient(#742774, rgba(58, 56, 56, 0.45)), url(./images/office-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 4rem;
+}
+
+.security .security-items h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.security .security-items hr {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.security .security-items p {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: white;
+  text-shadow: 2px 1px 5px black;
+}
+
+.transform {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#e3e0e0));
+  background-image: linear-gradient(to bottom, white, #e3e0e0);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 4rem 4rem;
+}
+
+.transform h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+  text-shadow: 2px 1px 4px white;
+}
+
+.transform hr {
+  width: 40%;
+  display: block;
+  margin: 1.4rem auto;
+}
+
+.transform p {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: black;
+  text-shadow: 2px 1px 5px white;
+}
+
+.transform .transform-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+}
+
+.transform .transform-detail .transform-detail-items {
+  margin: 0rem 3rem;
+  padding: 0.5rem 2.5rem;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.transform .transform-detail .transform-detail-items h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 1px 4px white;
+}
+
+.transform .transform-detail .transform-detail-items p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  text-shadow: 2px 1px 4px white;
+}
+
+.microsoft-footer {
+  background: -webkit-gradient(linear, left top, right top, from(#742774), to(rgba(58, 56, 56, 0.45)));
+  background: linear-gradient(to right, #742774, rgba(58, 56, 56, 0.45));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.microsoft-footer h1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+}
+
+.microsoft-footer hr {
+  width: 40%;
+  margin: 1rem 0rem;
+}
+
+.microsoft-footer .microsoft-footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: raw;
+          flex-direction: raw;
+}
+
+.microsoft-footer .microsoft-footer-items .far {
+  font-size: 6rem;
+  color: white;
+  padding-right: 5rem;
+  text-shadow: 1px 1px 4px black;
+}
+
+.microsoft-footer .microsoft-footer-items .btn {
+  padding: 1.2rem 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 14px black;
+          box-shadow: 4px 4px 14px black;
+  background-color: #742774;
+}
+
+.microsoft-footer .microsoft-footer-items .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #742774;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/*# sourceMappingURL=style.css.map */
